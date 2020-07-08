@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Papper and Scissors</title>
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
 
+<body>
+  <div class="game flex-content">
+    <div class="score-game flex-content">
+      <div class="rock-paper-scissors">
+        <p>rock</p>
+        <p>paper</p>
+        <p>scissors</p>
+      </div>
+      <div class="border-score flex-content">
+        <p>score</p>
+        <p id="score-player">0</p>
+      </div>
+    </div>
+
+    <div class="boarder-game">
+
+      <div id="paper" class="icon-game flex-content">
+        <img src="/images/icon-paper.svg" alt="image icon paper">
+      </div>
+      <div id="scissors" class="icon-game flex-content">
+        <img src="/images/icon-scissors.svg" alt="image icon scissors">
+      </div>
+      <div id="rock" class="icon-game flex-content">
+        <img src="/images/icon-rock.svg" alt="image icon rock">
+      </div>
+    </div>
+
+    <div id="rules" class="rules">
+      <p>rules</p>
+    </div>
+  </div>
+
+  <div class="modal-rules flex-content">
+    <div class="card">
+      <div class="title-close flex-content">
+        <div class="title">
+          <p>rules</p>
+        </div>
+        <div class="close">
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+      <div class="modal-rules__rules">
+        <img src="/images/image-rules.svg" alt="image content rules">
+      </div>
+    </div>
+  </div>
   <script src="js/app.js"></script>
 </body>
+
 </html>
