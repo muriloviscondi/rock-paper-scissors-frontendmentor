@@ -94,7 +94,7 @@ p {
 }
 
 .boarder-game {
-  background-image: url('/images/bg-triangle.svg');
+  background-image: url('../images/bg-triangle.svg');
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;  
