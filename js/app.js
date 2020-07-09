@@ -19,17 +19,17 @@ for (let moveGame of movesGame) {
 
     setTimeout(() => {
       handleCPUMove(cpu)
-    }, 2500)
+    }, 1250)
 
     setTimeout(() => {
       handleResult(id, cpu)
-    }, 3000)
+    }, 2500)
   })  
 }
 
 // Play again
 document.querySelector('#retry').addEventListener('click', () => {
-  document.querySelector('#painel-result').classList.remove('display-none')
+  document.querySelector('#painel-result').classList.add('display-none')
   document.querySelector('.boarder-result').classList.add('out')
   document.querySelector('.boarder-game').classList.remove('out')
 
