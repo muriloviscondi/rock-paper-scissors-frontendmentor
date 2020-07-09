@@ -26,14 +26,35 @@
 
     <div class="boarder-game">
 
-      <div id="paper" class="icon-game flex-content">
+      <div id="paper" class="paper icon-game flex-content">
         <img src="/images/icon-paper.svg" alt="image icon paper">
       </div>
-      <div id="scissors" class="icon-game flex-content">
+      <div id="scissors" class="scissors icon-game flex-content">
         <img src="/images/icon-scissors.svg" alt="image icon scissors">
       </div>
-      <div id="rock" class="icon-game flex-content">
+      <div id="rock" class="rock icon-game flex-content">
         <img src="/images/icon-rock.svg" alt="image icon rock">
+      </div>
+    </div>
+
+    <div id="result" class="boarder-result flex-content display-none">
+      <div class="picked">
+        <p>you picked</p>
+        <div id="player-move" class="none icon-game flex-content">
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div id="painel-result" class="result-game display-none">
+        <p id="msg-result"></p>
+        <a id="retry">play again</a>
+      </div>
+
+      <div class="picked">
+        <p>the house picked</p>
+        <div id="cpu-move" class="none icon-game flex-content">
+          <img src="" alt="">
+        </div>
       </div>
     </div>
 
