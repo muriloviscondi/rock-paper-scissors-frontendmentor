@@ -66,13 +66,13 @@ function handleTransitionGameBorder() {
 function handlePlayerMove(id) {  
   playerMove.classList.add(id)
   playerMove.classList.remove('none')
-  playerMove.querySelector('img').src = `/images/icon-${id}.svg`
+  playerMove.querySelector('img').src = `images/icon-${id}.svg`
 }
 
 function handleCPUMove(cpu) {
   cpuMove.classList.add(cpu)
   cpuMove.classList.remove('none')
-  cpuMove.querySelector('img').src = `/images/icon-${cpu}.svg`
+  cpuMove.querySelector('img').src = `images/icon-${cpu}.svg`
 }
 
 function checkMoveCpu() {
