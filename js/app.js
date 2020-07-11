@@ -29,7 +29,6 @@ for (let moveGame of movesGame) {
 
 // Play again
 document.querySelector('#retry').addEventListener('click', () => {
-  document.querySelector('#painel-result').classList.add('display-none')
   document.querySelector('.boarder-result').classList.add('out')
   document.querySelector('.boarder-game').classList.remove('out')
 
@@ -56,9 +55,10 @@ function handleTransitionGameResult() {
 
 // Transition result-game to border-game
 function handleTransitionGameBorder() {
-  document.querySelector('.boarder-result').classList.add('display-none')
-  document.querySelector('.boarder-result').classList.remove('out')
   document.querySelector('.boarder-game').classList.remove('display-none')
+  document.querySelector('.boarder-result').classList.remove('out')  
+  document.querySelector('.boarder-result').classList.add('display-none')
+  document.querySelector('#painel-result').classList.add('display-none')
 }
 
 
